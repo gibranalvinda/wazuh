@@ -1,0 +1,4 @@
+<decoder name="openshift">
+    <prematch>fluentd - - - </prematch>
+    <plugin_decoder offset="after_prematch">JSON_Decoder</plugin_decoder>
+</decoder> 

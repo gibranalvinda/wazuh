@@ -1,0 +1,12 @@
+<group name="openshift,">
+  <rule id="100310" level="0">
+   <decoded_as>openshift</decoded_as>
+   <description>Group Openshift</description>
+  </rule>
+
+  <rule id="100311" level="7">
+    <if_sid>100310</if_sid>
+    <field name="user.username" type="pcre2">^(?:(?!system).)*$</field>
+    <description>This is Openshift log from $(pipeline_metadata.collector.ipaddr4)</description>
+  </rule>
+</group>
