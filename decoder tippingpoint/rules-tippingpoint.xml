@@ -1,0 +1,6 @@
+<group name="tippingpoint,">
+  <rule id="100313" level="4">
+   <decoded_as>tippingpoint</decoded_as>
+   <description>$(event_name) on $(severity) severity</description>
+  </rule>
+</group>

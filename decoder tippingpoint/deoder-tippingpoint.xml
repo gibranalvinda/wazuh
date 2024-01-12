@@ -1,0 +1,89 @@
+<decoder name="tippingpoint">
+  <program_name>^CEF$</program_name>
+</decoder>
+
+<decoder name="tippingpoint">
+  <prematch type="pcre2">\|([^\|]*)\|([^\|]*)\|([^\|]*)\|[^\|]\|([^\|]*)\|[^\:]*\:([^\|]*)\|([^\|]*)</prematch>
+</decoder>
+
+<decoder name="tippingpoint">
+  <prematch type="pcre2">(\d+)\|(\w+)\|(\w+)\|([^\|]*)\|(\d+)\|([^\|]*)\|(\d+)\|</prematch>
+</decoder>
+
+<decoder name="tippingpoint">
+  <parent>tippingpoint</parent>
+  <regex type="pcre2">\|([^\|]*)\|([^\|]*)\|([^\|]*)\|[^\|]\|([^\|]*)\|([^\|]*)</regex>
+  <order>vendor, product_version, event_id, severity, event_name, severity_level</order>
+</decoder>
+
+<decoder name="tippingpoint">
+  <parent>tippingpoint</parent>
+  <regex type="pcre2">(\w+)\|([^\|]*)\|(\d+)\|([^\|]*)\|(\d+)\|</regex>
+  <order>vendor, product_version,event_id,event_name, severity_level</order>
+</decoder>
+
+<decoder name="tippingpoint">
+  <parent>tippingpoint</parent>
+  <regex type="pcre2">app=([^\s]*)</regex>
+  <order>app</order>
+</decoder>
+
+<decoder name="tippingpoint">
+  <parent>tippingpoint</parent>
+  <regex type="pcre2">cnt=([^\s]*)</regex>
+  <order>cnt</order>
+</decoder>
+
+<decoder name="tippingpoint">
+  <parent>tippingpoint</parent>
+  <regex type="pcre2">dst=([^\s]*)</regex>
+  <order>destination_ip</order>
+</decoder>
+
+<decoder name="tippingpoint">
+  <parent>tippingpoint</parent>
+  <regex type="pcre2">dpt=([^\s]*)</regex>
+  <order>destination_port</order>
+</decoder>
+
+<decoder name="tippingpoint">
+  <parent>tippingpoint</parent>
+  <regex type="pcre2">act=([^\s]*)</regex>
+  <order>action</order>
+</decoder>
+
+<decoder name="tippingpoint">
+  <parent>tippingpoint</parent>
+  <regex type="pcre2">dvchost=([^\s]*)</regex>
+  <order>device_hostname</order>
+</decoder>
+
+<decoder name="tippingpoint">
+  <parent>tippingpoint</parent>
+  <regex type="pcre2">src=([^\s]*)</regex>
+  <order>source_ip</order>
+</decoder>
+
+<decoder name="tippingpoint">
+  <parent>tippingpoint</parent>
+  <regex type="pcre2">spt=([^\s]*)</regex>
+  <order>source_port</order>
+</decoder>
+
+<decoder name="tippingpoint">
+  <parent>tippingpoint</parent>
+  <regex type="pcre2">cat=([^\s]*)</regex>
+  <order>category</order>
+</decoder>
+
+<decoder name="tippingpoint">
+  <parent>tippingpoint</parent>
+  <regex type="pcre2">proto=([^\s]*)</regex>
+  <order>protocol</order>
+</decoder>
+
+<decoder name="tippingpoint">
+  <parent>tippingpoint</parent>
+  <regex type="pcre2">sourceTranslatedAddress=([^\s]*)</regex>
+  <order>source_translate_address</order>
+</decoder>
