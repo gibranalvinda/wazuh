@@ -3,4 +3,4 @@
    <decoded_as>tippingpoint</decoded_as>
    <description>$(event_name) on $(severity) severity</description>
   </rule>
-</group>
+  </group>
