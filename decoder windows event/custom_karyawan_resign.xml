@@ -1,0 +1,7 @@
+<group name="windows,">
+  <rule id="100315" level="12">
+     <if_sid>60100,60101,60102,60103,60104</if_sid>
+     <list field="win.eventdata.targetUserName" lookup="match_key">etc/lists/karyawan-resign</list>
+     <description>The employee has resigned.</description>
+  </rule>
+</group>
