@@ -1,0 +1,7 @@
+<group name="windows,windows_security,">
+    <rule id="100316" level="5">
+        <if_sid>60100,60101,60102,60103,60104</if_sid>
+        <field name="win.system.eventID">^5142$</field>
+        <description>A network share object was added.</description>
+    </rule>
+</group>
