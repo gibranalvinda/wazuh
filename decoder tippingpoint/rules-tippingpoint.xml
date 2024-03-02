@@ -4,3 +4,4 @@
    <description>$(event_name) on $(severity) severity</description>
   </rule>
   </group>
+  
