@@ -1,0 +1,1278 @@
+<!-- DECODER -->
+
+<decoder name="cisco_ise">
+    <prematch type="pcre2">(CISE_)</prematch>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">(CISE_RADIUS_Accounting)</regex>
+  <order>event_type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">(CISE_Failed_Attempts)</regex>
+  <order>event_type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">(CISE_Administrative_and_Operational_Audit)</regex>
+  <order>event_type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">(CISE_Passed_Authentications)</regex>
+  <order>event_type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">(CISE_System_Statistics)</regex>
+  <order>event_type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">(CISE_Profiler)</regex>
+  <order>event_type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">(CISE_Posture_and_Client_Provisioning_Audit)</regex>
+  <order>event_type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">(CISE_TACACS_Accounting)</regex>
+  <order>event_type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">(CISE_MONITORING_DATA_PURGE_AUDIT)</regex>
+  <order>event_type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">(CISE_TACACS_Diagnostics)</regex>
+  <order>event_type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">(CISE_RADIUS_Diagnostics)</regex>
+  <order>event_type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Acct-Authentic=([^\,]*)</regex>
+  <order>Acct_Authentic</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Acct-Delay-Time=([^\,]*)</regex>
+  <order>Acct_Delay_Time</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Acct-Input-Gigawords=([^\,]*)</regex>
+  <order>Acct_Input_Gigawords</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Acct-Input-Octets=([^\,]*)</regex>
+  <order>Acct_Input_Octets</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Acct-Input-Packets=([^\,]*)</regex>
+  <order>Acct_Input_Packets</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Acct-Output-Gigawords=([^\,]*)</regex>
+  <order>Acct_Output_Gigawords</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Acct-Output-Octets=([^\,]*)</regex>
+  <order>Acct_Output_Octets</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Acct-Output-Packets=([^\,]*)</regex>
+  <order>Acct_Output_Packets</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Acct-Session-Id=([^\,]*)</regex>
+  <order>Acct_Session_Id</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Acct-Status-Type=([^\,]*)</regex>
+  <order>Acct_Status_Type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Airespace-Wlan-Id=([^\,]*)</regex>
+  <order>Airespace_Wlan_Id</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Called-Station-ID=([^\,]*)</regex>
+  <order>Called_Station_ID</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Class=([^\,]*)</regex>
+  <order>Class</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">ConfigVersionId=([^\,]*)</regex>
+  <order>ConfigVersionId</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Device IP Address=([^\,]*)</regex>
+  <order>Device_IP_Address</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Event-Timestamp=([^\,]*)</regex>
+  <order>Event_Timestamp</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Framed-IP-Address=([^\,]*)</regex>
+  <order>Framed_IP_Address</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Framed-IPv6-Address=([^\,]*)</regex>
+  <order>Framed_IPv6_Address</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">NAS-IP-Address=([^\,]*)</regex>
+  <order>NAS_IP_Address</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">NAS-Identifier=([^\,]*)</regex>
+  <order>NAS_Identifier</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">NAS-Port=([^\,]*)</regex>
+  <order>NAS_Port</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">NAS-Port-Type=([^\,]*)</regex>
+  <order>NAS_Port_Type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Model Name=([^\,]*)</regex>
+  <order>Model_Name</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">NetworkDeviceGroups=([^\,]*)</regex>
+  <order>NetworkDeviceGroups</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">NetworkDeviceName=([^\,]*)</regex>
+  <order>NetworkDeviceName</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Network Device Profile=([^\,]*)</regex>
+  <order>Profile</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">RequestLatency=([^\,]*)</regex>
+  <order>RequestLatency</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Step=([^\,]*)</regex>
+  <order>Step</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Device Type=([^\,]*)</regex>
+  <order>Device_Type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">UserName=([^\,]*)</regex>
+  <order>UserName</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">cisco-av-pair=([^\,]*)</regex>
+  <order>cisco_av_pair</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-Host-Candidate-Identities=([^\,]*)</regex>
+  <order>AD_Host_Candidate_Identities</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-Host-DNS-Domain=([^\,]*)</regex>
+  <order>AD_Host_DNS_Domain</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-Host-Join-Point=([^\,]*)</regex>
+  <order>AD_Host_Join_Point</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-Host-NetBios-Name=([^\,]*)</regex>
+  <order>AD_Host_NetBios_Name</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-Host-Qualified-Name=([^\,]*)</regex>
+  <order>AD_Host_Qualified_Name</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AAD-Host-Resolved-DNs=([^\,]*)</regex>
+  <order>AD_Host_Resolved_DNs</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-Host-Resolved-Identities=([^\,]*)</regex>
+  <order>AD_Host_Resolved_Identities</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-Host-SamAccount-Name=([^\,]*)</regex>
+  <order>AD_Host_SamAccount_Name</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AuthenticationIdentityStore=([^\,]*)</regex>
+  <order>AuthenticationIdentityStore</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AuthenticationMethod=([^\,]*)</regex>
+  <order>AuthenticationMethod</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">CPMSessionID=([^\,]*)</regex>
+  <order>CPMSessionID</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Calling-Station-ID=([^\,]*)</regex>
+  <order>Calling_Station_ID</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">DC=([^\,]*)</regex>
+  <order>DC</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">DTLSSupport=([^\,]*)</regex>
+  <order>DTLSSupport</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">DestinationIPAddress=([^\,]*)</regex>
+  <order>DestinationIPAddress</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">DestinationPort=([^\,]*)</regex>
+  <order>DestinationPort</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">DetailedInfo=([^\,]*)</regex>
+  <order>DetailedInfo</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">EAP-Key-Name=([^\,]*)</regex>
+  <order>EAP_Key_Name</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">EapAuthentication=([^\,]*)</regex>
+  <order>EapAuthentication</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">EapTunnel=([^\,]*)</regex>
+  <order>EapTunnel</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">EndPointMACAddress=([^\,]*)</regex>
+  <order>EndPointMACAddress</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">EndPointMatchedProfile=([^\,]*)</regex>
+  <order>EndPointMatchedProfile</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">ExternalGroups=([^\,]*)</regex>
+  <order>ExternalGroups</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">FailureReason=([^\,]*)</regex>
+  <order>FailureReason</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Framed-MTU=([^\,]*)</regex>
+  <order>Framed_MTU</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">HostIdentityGroup=([^\,]*)</regex>
+  <order>HostIdentityGroup</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">ISEPolicySetName=([^\,]*)</regex>
+  <order>ISEPolicySetName</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">IdentityAccessRestricted=([^\,]*)</regex>
+  <order>IdentityAccessRestricted</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">IdentityGroup=([^\,]*)</regex>
+  <order>IdentityGroup</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">IdentityPolicyMatchedRule=([^\,]*)</regex>
+  <order>IdentityPolicyMatchedRule</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">IsMachineIdentity=([^\,]*)</regex>
+  <order>IsMachineIdentity</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">IsThirdPartyDeviceFlow=([^\,]*)</regex>
+  <order>IsThirdPartyDeviceFlow</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Location=([^\,]*)</regex>
+  <order>Location</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">NetworkDeviceProfileId=([^\,]*)</regex>
+  <order>NetworkDeviceProfileId</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">NetworkDeviceProfileName=([^\,]*)</regex>
+  <order>NetworkDeviceProfileName</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Protocol=([^\,]*)</regex>
+  <order>Protocol</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">RadiusFlowType=([^\,]*)</regex>
+  <order>RadiusFlowType</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">RadiusPacketType=([^\,]*)</regex>
+  <order>RadiusPacketType</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Response=([^\,]*)</regex>
+  <order>Response</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">SSID=([^\,]*)</regex>
+  <order>SSID</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">SelectedAuthenticationIdentityStores=([^\,]*)</regex>
+  <order>SelectedAuthenticationIdentityStores</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">SelectedAuthorizationProfiles=([^\,]*)</regex>
+  <order>SelectedAuthorizationProfiles</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Service-Type=([^\,]*)</regex>
+  <order>Service_Type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AcsSessionID=([^\,]*)</regex>
+  <order>AcsSessionID</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">State=([^\,]*)</regex>
+  <order>State</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">StepData=([^\,]*)</regex>
+  <order>StepData</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">TLSCipher=([^\,]*)</regex>
+  <order>TLSCipher</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">TLSVersion=([^\,]*)</regex>
+  <order>TLSVersion</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">UserAccountControl=([^\,]*)</regex>
+  <order>UserAccountControl</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AdminIPAddress=([^\,]*)</regex>
+  <order>AdminIPAddress</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AdminInterface=([^\,]*)</regex>
+  <order>AdminInterface</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AdminName=([^\,]*)</regex>
+  <order>AdminName</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">FailureFlag=([^\,]*)</regex>
+  <order>FailureFlag</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">OperationMessageText=([^\,]*)</regex>
+  <order>OperationMessageText</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">RequestResponseType=([^\,]*)</regex>
+  <order>RequestResponseType</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-User-DNS-Domain=([^\,]*)</regex>
+  <order>AD_User_DNS_Domain</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-User-Join-Point=([^\,]*)</regex>
+  <order>AD_User_Join_Point</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-User-NetBios-Name=([^\,]*)</regex>
+  <order>AD_User_NetBios_Name</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-User-Qualified-Name=([^\,]*)</regex>
+  <order>AD_User_Qualified_Name</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-User-Resolved-DNs=([^\,]*)</regex>
+  <order>AD_User_Resolved_DNs</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-User-Resolved-Identities=([^\,]*)</regex>
+  <order>AD_User_Resolved_Identities</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-User-SamAccount-Name=([^\,]*)</regex>
+  <order>AD_User_SamAccount_Name</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AuthenticationStatus=([^\,]*)</regex>
+  <order>AuthenticationStatus</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AuthorizationPolicyMatchedRule=([^\,]*)</regex>
+  <order>AuthorizationPolicyMatchedRule</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">IdentitySelectionMatchedRule=([^\,]*)</regex>
+  <order>IdentitySelectionMatchedRule</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">IsMachineAuthentication=([^\,]*)</regex>
+  <order>IsMachineAuthentication</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">LicenseTypes=([^\,]*)</regex>
+  <order>LicenseTypes</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">MS-MPPE-Recv-Key=([^\;]*)</regex>
+  <order>MS_MPPE_Recv_Key</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">MS-MPPE-Send-Key=([^\;]*)</regex>
+  <order>MS_MPPE_Send_Key</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">NAS-Port-Id=([^\,]*)</regex>
+  <order>NAS_Port_Id</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">PostureAssessmentStatus=([^\,]*)</regex>
+  <order>PostureAssessmentStatus</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Tunnel-Medium-Type=([^\;]*)</regex>
+  <order>Tunnel_Medium_Type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Tunnel-Private-Group-ID=([^\;]*)</regex>
+  <order>Tunnel_Private_Group_ID</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Tunnel-Type=([^\;]*)</regex>
+  <order>Tunnel_Type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">allowEasyWiredSession=([^\,]*)</regex>
+  <order>allowEasyWiredSession</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AcsInstance=([^\,]*)</regex>
+  <order>AcsInstance</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD Connector=([^\,]*)</regex>
+  <order>AD_Connector</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">pxGrid Controller=([^\;]*)</regex>
+  <order>pxGrid_Controller</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Docker Daemon=([^\,]*)</regex>
+  <order>Docker_Daemon</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Profiler Database=([^\,]*)</regex>
+  <order>Profiler_Database</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">ISE Indexing Engine=([^\,]*)</regex>
+  <order>ISE_Indexing_Engine</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Listener=([^\,]*)</regex>
+  <order>Listener</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Manager=([^\;]*)</regex>
+  <order>Manager</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Log Processor=([^\,]*)</regex>
+  <order>Log_Processor</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AD-Groups-Names=([^\,]*)</regex>
+  <order>AD_Groups_Names</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">BYODRegistration=([^\,]*)</regex>
+  <order>BYODRegistration</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">CacheUpdateTime=([^\,]*)</regex>
+  <order>CacheUpdateTime</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">CreateTime=([^\,]*)</regex>
+  <order>CreateTime</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">DeviceRegistrationStatus=([^\,]*)</regex>
+  <order>DeviceRegistrationStatus</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">EndPointPolicyID=([^\,]*)</regex>
+  <order>EndPointPolicyID</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">EndPointVersion=([^\,]*)</regex>
+  <order>EndPointVersion</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">EndpointCertainityMetric=([^\,]*)</regex>
+  <order>EndpointCertainityMetric</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">EndpointMatchedPolicy=([^\,]*)</regex>
+  <order>EndpointMatchedPolicy</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">EndpointNADAddress=([^\,]*)</regex>
+  <order>EndpointNADAddress</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">EndpointOUI=([^\,]*)</regex>
+  <order>EndpointOUI</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">EndpointPolicy=([^\,]*)</regex>
+  <order>EndpointPolicy</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">EndpointProperty=([^\,]*)</regex>
+  <order>EndpointProperty</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">ExternalErrorCode=([^\,]*)</regex>
+  <order>ExternalErrorCode</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Factor=([^\,]*)</regex>
+  <order>Factor</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">FirstCollection=([^\,]*)</regex>
+  <order>FirstCollection</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">IdentityGroupID=([^\,]*)</regex>
+  <order>IdentityGroupID</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">LastActivity=([^\,]*)</regex>
+  <order>LastActivity</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">LastNmapScanTime=([^\,]*)</regex>
+  <order>LastNmapScanTime</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">MessageCode=([^\,]*)</regex>
+  <order>MessageCode</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">NmapScanCount=([^\,]*)</regex>
+  <order>NmapScanCount</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">OriginalUserName=([^\,]*)</regex>
+  <order>OriginalUserName</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">PhoneID=([^\,]*)</regex>
+  <order>PhoneID</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">PolicyVersion=([^\,]*)</regex>
+  <order>PolicyVersion</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">PostureExpiry=([^\,]*)</regex>
+  <order>PostureExpiry</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">PostureOS=([^\,]*)</regex>
+  <order>PostureOS</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">PostureStatus=([^\,]*)</regex>
+  <order>PostureStatus</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">StaticAssignment=([^\,]*)</regex>
+  <order>StaticAssignment</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">TimeToProfile=([^\,]*)</regex>
+  <order>TimeToProfile</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">UseCase=([^\,]*)</regex>
+  <order>UseCase</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">UserType=([^\,]*)</regex>
+  <order>UserType</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">User-Fetch-CountryName=([^\,]*)</regex>
+  <order>User_Fetch_CountryName</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">User-Fetch-Email=([^\,]*)</regex>
+  <order>User_Fetch_Email</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">User-Fetch-First-Name=([^\,]*)</regex>
+  <order>User_Fetch_First_Name</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">User-Fetch-Job-Title=([^\,]*)</regex>
+  <order>User_Fetch_Job_Title</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">User-Fetch-Last-Name=([^\,]*)</regex>
+  <order>User_Fetch_Last_Name</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">User-Fetch-LocalityName=([^\,]*)</regex>
+  <order>User_Fetch_LocalityName</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">User-Fetch-Organizational-Unit=([^\,]*)</regex>
+  <order>User_Fetch_Organizational_Unit</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">User-Fetch-StateOrProvinceName=([^\,]*)</regex>
+  <order>User_Fetch_StateOrProvinceName</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">User-Fetch-StreetAddress=([^\,]*)</regex>
+  <order>User_Fetch_StreetAddress</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">User-Fetch-Telephone=([^\,]*)</regex>
+  <order>User_Fetch_Telephone</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">operating-system=([^\,]*)</regex>
+  <order>operating_system</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">posturePassCondition=([^\,]*)</regex>
+  <order>posturePassCondition</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AMInstalled=([^\,]*)</regex>
+  <order>AMInstalled</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">MacAddress=([^\,]*)</regex>
+  <order>MacAddress</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">OperatingSystem=([^\,]*)</regex>
+  <order>OperatingSystem</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">PRAAction=([^\,]*)</regex>
+  <order>PRAAction</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">PRAEnforcementFlag=([^\,]*)</regex>
+  <order>PRAEnforcementFlag</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">PRAGraceTime=([^\,]*)</regex>
+  <order>PRAGraceTime</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">PRAInterval=([^\,]*)</regex>
+  <order>PRAInterval</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">PostureAgentVersion=([^\,]*)</regex>
+  <order>PostureAgentVersion</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">PostureReport=([^\,]*)</regex>
+  <order>PostureReport</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">RequestTime=([^\,]*)</regex>
+  <order>RequestTime</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">ResponseTime=([^\,]*)</regex>
+  <order>ResponseTime</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">SystemDomain=([^\,]*)</regex>
+  <order>SystemDomain</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">SystemName=([^\,]*)</regex>
+  <order>SystemName</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">SystemUser=([^\,]*)</regex>
+  <order>SystemUser</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">SystemUserDomain=([^\,]*)</regex>
+  <order>SystemUserDomain</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">UserAgreementStatus=([^\,]*)</regex>
+  <order>UserAgreementStatus</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AVPair=([^\,]*)</regex>
+  <order>AVPair</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AcctReply-Status=([^\;]*)</regex>
+  <order>AcctReply_Status</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">AcctRequest-Flags=([^\,]*)</regex>
+  <order>AcctRequest_Flags</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Authen-Method=([^\,]*)</regex>
+  <order>Authen_Method</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">CmdAV="([^.]*)"</regex>
+  <order>CmdAV</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Privilege-Level=([^\,]*)</regex>
+  <order>Privilege_Level</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Service-Argument=([^\,]*)</regex>
+  <order>Service_Argument</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">User=([^\,]*)</regex>
+  <order>User</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">threshold_space =([^\,]*)</regex>
+  <order>threshold_space</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">MESSAGE=([^\s]*)</regex>
+  <order>MESSAGE</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">used_space =([^\,]*)</regex>
+  <order>used_space</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Action=([^\,]*)</regex>
+  <order>Action</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Authen-Reply-Status=([^\;]*)</regex>
+  <order>Authen_Reply_Status</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Authen-Type=([^\,]*)</regex>
+  <order>Authen_Type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">CiscoIOS=([^\,]*)</regex>
+  <order>CiscoIOS</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">EnableSingleConnect=([^\,]*)</regex>
+  <order>EnableSingleConnect</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Header-Flags=([^\,]*)</regex>
+  <order>Header_Flags</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">MajorVersion=([^\,]*)</regex>
+  <order>MajorVersion</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">MinorVersion=([^\,]*)</regex>
+  <order>MinorVersion</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Device Port=([^\,]*)</regex>
+  <order>Device_Port</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Remote-Address=([^\,]*)</regex>
+  <order>Remote_Address</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">SelectedAccessService=([^\,]*)</regex>
+  <order>SelectedAccessService</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Sequence-Number=([^\,]*)</regex>
+  <order>Sequence_Number</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Service=([^\,]*)</regex>
+  <order>Service</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">SessionId=([^\,]*)</regex>
+  <order>SessionId</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">Type=([^\,]*)</regex>
+  <order>Type</order>
+</decoder>
+
+<decoder name="cisco_ise">
+  <parent>cisco_ise</parent>
+  <regex type="pcre2">UseSingleConnect=([^\,]*)</regex>
+  <order>UseSingleConnect</order>
+</decoder>
+

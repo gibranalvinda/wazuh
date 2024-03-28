@@ -1,0 +1,8 @@
+<!-- RULES -->
+
+<group name="Cisco,">
+  <rule id="100312" level="5">
+    <decoded_as>cisco_ise</decoded_as>
+    <description>Event log cisco</description>
+  </rule>
+</group>
