@@ -7,37 +7,19 @@
 
   <rule id="100003" level="5">
     <if_sid>100002</if_sid>
-    <field name="log_type">dhcp</field>
-    <description>MikroTik dhcp-client received an IP address $(ipaddress)</description>
-  </rule>
-
-  <rule id="100004" level="5">
-    <if_sid>100002</if_sid>
-    <match>rebooted</match>
-    <description>MikroTik router rebooted</description>
-  </rule>
-
-  <rule id="100005" level="5">
-    <if_sid>100002</if_sid>
     <match>logged out from</match>
     <description>MikroTik user logged out via $(access_method)</description>
   </rule>
 
-  <rule id="100006" level="5">
+  <rule id="100004" level="5">
     <if_sid>100002</if_sid>
     <match>logged in from</match>
     <description>MikroTik user logged in via $(access_method)</description>
   </rule>
 
-  <rule id="100007" level="5">
+  <rule id="100004" level="5">
     <if_sid>100002</if_sid>
-    <match>changed</match>
-    <description>Mikrotik $(actions)</description>
-  </rule>
-
-  <rule id="100008" level="5">
-    <if_sid>100002</if_sid>
-    <match>interface,info</match>
-    <description>MikroTik network interface is $(link_status)</description>
+    <match>login failure</match>
+    <description>MikroTik user login failure via $(access_method)</description>
   </rule>
 </group>

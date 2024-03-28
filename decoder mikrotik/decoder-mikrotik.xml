@@ -1,56 +1,76 @@
 <!-- DECODER -->
 <decoder name="mikrotik">
-    <prematch type="pcre2">(\d{2}:\d{2}:\d{2})\s([^,]+)</prematch>
+  <prematch>^MikroTik : </prematch>
 </decoder>
 
-<!-- 08:50:00 system,info mangle rule changed -->
 <decoder name="mikrotik-decoder">
   <parent>mikrotik</parent>
-  <regex type="pcre2">(\d{2}:\d{2}:\d{2})\s(system),(info)\s([^\n]+)</regex>
-  <order>time,log_type,topics,actions</order>
+  <regex type="pcre2">([^\s]*\s[^\s]*\s\d+:\d+:\d+)\s([^\s]*)</regex>
+  <order>time,hostname</order>
 </decoder>
 
-<!-- 14:35:30 system,info,account user fahmi logged in from 10.7.190.8 via winbox -->
 <decoder name="mikrotik-decoder">
   <parent>mikrotik</parent>
-  <regex type="pcre2">(\d{2}:\d{2}:\d{2})\s(system),(info).account user\s([^\s]*)\s([^\s]*\s[^\s]*)\s[^\s]*\s([^\s]+)\svia\s([^\n]+)</regex>
-  <order>time,log_type,topics,user,actions,srcip,access_method</order>
+  <regex type="pcre2">user\s([^\s]+)\s(logged\s[^\s]+)\sfrom\s([^\s]+)\svia\s([^\n]+)</regex>
+  <order>user,actions,srcip,access_method</order>
 </decoder>
 
-<!-- 08:00:50 interface,info ether3-ATM link up (speed 1G, full duplex) -->
 <decoder name="mikrotik-decoder">
   <parent>mikrotik</parent>
-  <regex type="pcre2">(\d{2}:\d{2}:\d{2})\s(interface),(info)\s(.+?)\slink\s([^\n]+)</regex>
-  <order>time,log_type,topics,interface,link_status</order>
+  <regex type="pcre2">(login\sfailure)\sfor\suser\s([^\s]*)\sfrom\s([^\s]*)\svia\s([^\n]*)</regex>
+  <order>actions,user,srcip,access_method</order>
 </decoder>
 
-<!-- 08:00:49 bridge,info "bridge-LAN-ATM" mac address changed to E4:8D:8C:85:54:C6 -->
 <decoder name="mikrotik-decoder">
   <parent>mikrotik</parent>
-  <regex type="pcre2">(\d{2}:\d{2}:\d{2})\s(bridge),(info)\s"([^"]*)"\s(mac\saddress\schanged)\sto\s([^\n]*)</regex>
-  <order>time,log_type,topics,bridge,actions,mac</order>
+  <regex type="pcre2">dstnat:([^\s]*)</regex>
+  <order>dstnat</order>
 </decoder>
 
-<!-- 08:00:44 system,error,critical router was rebooted without proper shutdown -->
 <decoder name="mikrotik-decoder">
   <parent>mikrotik</parent>
-  <regex type="pcre2">(\d{2}:\d{2}:\d{2})\s(system),(error).([^\n]+)</regex>
-  <order>time,log_type,topics,actions</order>
+  <regex type="pcre2">srcnat:([^\s]*)</regex>
+  <order>srcnat</order>
 </decoder>
 
-<!-- 08:00:52 dhcp,info dhcp1 assigned 10.9.139.74 to 00:E0:4C:9C:8A:2C  -->
 <decoder name="mikrotik-decoder">
   <parent>mikrotik</parent>
-  <regex type="pcre2">(\d{2}:\d{2}:\d{2})\s(dhcp),(info)\s([^\s]+)\s(deassigned|assigned)\s([^\s]+)\s[^\s]+\s([^\s]+)</regex>
-  <order>time,log_type,topics,dhcp_name,actions,ipaddress,mac</order>
+  <regex type="pcre2">in:([^\s]*)</regex>
+  <order>input</order>
 </decoder>
 
-<!-- 08:01:06 dhcp,info dhcp-client on ether4-Indihome got IP address 192.168.1.2  -->
 <decoder name="mikrotik-decoder">
   <parent>mikrotik</parent>
-  <regex type="pcre2">(\d{2}:\d{2}:\d{2})\s(dhcp),(info)\s([^\s]+)\son\s([^\s]+)\s(got IP address)\s([^\n]+)</regex>
-  <order>time,log_type,topics,dhcp_name,interface,actions,ipaddress</order>
+  <regex type="pcre2">out:([^\s]*)</regex>
+  <order>out</order>
 </decoder>
 
+<decoder name="mikrotik-decoder">
+  <parent>mikrotik</parent>
+  <regex type="pcre2">out:([^\s]*)</regex>
+  <order>out</order>
+</decoder>
 
+<decoder name="mikrotik-decoder">
+  <parent>mikrotik</parent>
+  <regex type="pcre2">src-mac\s([^\s]*)</regex>
+  <order>srcmac</order>
+</decoder>
 
+<decoder name="mikrotik-decoder">
+  <parent>mikrotik</parent>
+  <regex type="pcre2">proto\s([^\s]*)</regex>
+  <order>protocol</order>
+</decoder>
+
+<decoder name="mikrotik-decoder">
+  <parent>mikrotik</parent>
+  <regex type="pcre2">([^\s]*):([^\s]*)->([^\s]*):([^\,]*)</regex>
+  <order>srcip,srcport,dstip,dstport</order>
+</decoder>
+
+<decoder name="mikrotik-decoder">
+  <parent>mikrotik</parent>
+  <regex type="pcre2">len\s([^\s]*)</regex>
+  <order>length</order>
+</decoder>
