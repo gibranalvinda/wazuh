@@ -1,0 +1,105 @@
+<decoder name="sangfor">
+  <program_name>fwlog</program_name>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">CEF:0\|(Sangfor)\|(NGAF)\|(.*?)\|(.*?)\|(.*?)\|(.*?)\|</regex>
+  <order>vendor_name,product_name,product_version,signature_id,event_name,severity_level</order>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">SourceSystem=([^\s]+)</regex>
+  <order>source_system</order>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">PolicyName=(.*?)\s+(?:DeviceEventClassID=|suser=|src=)</regex>
+  <order>policy_name</order>
+</decoder> 
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">suser=(.*?)\s+(?:src=)</regex>
+  <order>user</order>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">src=([^\s]+)</regex>
+  <order>srcip</order>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">dst=([^\s]+)</regex>
+  <order>dstip</order>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">target=(.*?)\s+(?:act=)</regex>
+  <order>target</order>
+</decoder>
+
+<decoder name="decoder-sangfor">  
+  <parent>sangfor</parent>
+  <regex type="pcre2">act=(.*?)(?:\s+start=|\s+Request=|\s+msg=|$)</regex>
+  <order>action</order>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">start=([^\s]+)</regex>
+  <order>start_time</order>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">msg=([^\n]+)</regex>
+  <order>message</order>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">VulnerabilityName=(.*?)\s+(?:src=)</regex>
+  <order>vulnerability_name</order>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">AttackType=(.*?)\s+(?:ThreatSeverity=)</regex>
+  <order>attack_type</order>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">ThreatSeverity=([^\s]+)</regex>
+  <order>threat_severity</order>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">Request=([^\n]+)</regex>
+  <order>request</order>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">app=(.*?)\s+(?:AttackType=|act=)</regex>
+  <order>app</order>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">dpt=([^\s]+)</regex>
+  <order>dstport</order>
+</decoder>
+
+<decoder name="decoder-sangfor">
+  <parent>sangfor</parent>
+  <regex type="pcre2">spt=([^\s]+)</regex>
+  <order>srcport</order>
+</decoder>
